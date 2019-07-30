@@ -41,8 +41,10 @@ $ hexo deploy
 ```
 注：deploy后的项目和此项目是两个项目，所以需要两个仓库
 
-More info: 
->[Deployment](https://hexo.io/docs/deployment.html)
+---
 
 Reference:
 >[Hexo 博客搭建指南](https://github.com/limedroid/HexoLearning)
+>[自定义域名绑定](https://segmentfault.com/a/1190000016923453)
+>[开发文档](https://hexo.io/docs/deployment.html)
+>[Hexo博客搭建之在文章中插入图片](https://yanyinhong.github.io/2017/05/02/How-to-insert-image-in-hexo-post/)

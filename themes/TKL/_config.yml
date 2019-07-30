@@ -1,10 +1,10 @@
 # config
 cover: /img/bg_img.jpg
+vedio: https://res.cloudinary.com/leishawn/video/upload/v1563417812/samples/sea-turtle.mp4
 logo: /img/logo.png
 top_saying:
-#- title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
-# - content: 每一个不曾起舞的日子都是对生命的辜负。
-- Verloren sei uns der Tag, wo nicht ein Mal getanzt wurde! Und falsch heißt uns jede Wahrheit, bei der es nicht ein Gelächter gab!
+- title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
+- content: Verloren sei uns der Tag, wo nicht ein Mal getanzt wurde! Und falsch heißt uns jede Wahrheit, bei der es nicht ein Gelächter gab!
 bottom_saying: 每一个不曾起舞的日子都是对生命的辜负。
 # Content
 excerpt_link: Read More

@@ -11,8 +11,7 @@ tags:
  - unmounting
 
 ## 旧生命周期
-
-![旧生命周期](https://user-gold-cdn.xitu.io/2019/6/10/16b41956d9dc2dfe?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![旧生命周期](/images/生命周期.png)
 ### mounting（6个什么周期函数）
  1. constructor(props)
  加载时调用一次，可以用来设置state等
@@ -94,7 +93,7 @@ class ScrollingList extends React.Component {
 
  4. componentDidMount
 
-###updating（5个生命周期函数）
+### updating（5个生命周期函数）
  1. static getDerivedStateFromPros
 
  2. shouldComponentUpdate(nextProps, nextState)
@@ -108,12 +107,12 @@ class ScrollingList extends React.Component {
 
  5. componentDidUpdate(prevProps, prevState, snapshot)
 
-###unmounting（1个生命周期函数）
+### unmounting（1个生命周期函数）
  1. componentWillUnmount
  清除事件监听、定时器等，防止内存泄漏。
 
 ### error Handling（） 
- 1. getDerivedStateFromError
+ 1. static getDerivedStateFromError
 不做任何负面作用，只是设置state，返回值就是state，捕获任何地方的js错误
 
  2. componentDidCatch
