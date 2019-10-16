@@ -11,7 +11,7 @@ tags:
  - unmounting
 
 ## 旧生命周期
-![旧生命周期](/images/生命周期.png)
+![旧生命周期](/images/react/生命周期.png)
 ### mounting（6个什么周期函数）
  1. constructor(props)
  加载时调用一次，可以用来设置state等

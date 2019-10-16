@@ -179,6 +179,7 @@ reduce
 initial = 第一个项目值，currentValue = 第二个项目值
 ```
 array.reduce(function(total,currentValue,currentIndex,array){}, initialValue)
+// total: 第一项的值或者上一次叠加的结果值
 ```
 注：空数组，无initialValue时报错
 
