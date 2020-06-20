@@ -26,3 +26,43 @@ function Wrap(Component){
   }
 }
 ```
+#### 实现方式
+1. 属性代理
+2. 反向继承
+
+1
+```aidl
+
+const Contain = WrapComponent =>{
+  
+  return class extends Component{
+    render(){
+      return <WrapComponent ...props/>
+    }
+  }
+}
+```
+```aidl
+class MyComponent extends Component{}
+
+const NewComponent = Contain(MyComonent)
+
+```
+```aidl
+//修饰器
+@Contain
+class MyComponent extends Component{} 
+
+```
+高阶组件的功能
+1.控制props
+```aidl
+const Contain = WrapComponent => class extends Component{
+  const newProps = {
+    newText: "newText"
+  }
+  render(){
+    return <WrapComponent ...props ...newProps/>
+  }
+}
+```

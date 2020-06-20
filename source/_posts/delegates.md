@@ -10,7 +10,7 @@ tags:
 ### defineProperty
 # delegates
 快速使用委托模式，delegate pattern，外层暴露的对象委托给内部的其他对象处理
-```aidl
+```js
 const delegates = require('delegates')
 const petShop = {
   dog: {
@@ -28,7 +28,10 @@ delegates(petShop, 'dog').getter('name').setter('aga').access
 ```
 
 源码
-```aidl
+```js
+function Delegator(proto, target){
+  
+}
 
 ```
 

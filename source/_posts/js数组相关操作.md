@@ -18,8 +18,11 @@ constructor
 ## 判断数组
 typeof  //String Object Number Undefined 
 instanceof 返回true或false
+[instanceof](https://www.ibm.com/developerworks/cn/web/1306_jiangjj_jsinstanceof/)
 ```
 instanceof Array
+Array.isArray([1,2,3])
+
 ```
 
 ## 数组新建
@@ -106,7 +109,9 @@ fill
 
 
 ### 不改变原数组的8个方法
-slice前拷贝数组项目
+slice浅拷贝数组项目
+(深拷贝数组值,如果数组里的是对象，该对象被浅拷贝，如果是字符串数字就是深拷贝)
+
 参数：
  - 起始位置
  - 结束位置（*不包括end*）（coopyWithin也不包括）
@@ -148,7 +153,7 @@ forEach
 array.forEach(function(item, index, array){}, thisValue)
 ```
 1. 无法退出，只能用return 返回，进入下一次循环
-2. 总是返回undefined，即使你返回了一个指
+2. 总是返回undefined，即使你返回了一个值
 
 map
 返回新数组
@@ -181,7 +186,11 @@ initial = 第一个项目值，currentValue = 第二个项目值
 array.reduce(function(total,currentValue,currentIndex,array){}, initialValue)
 // total: 第一项的值或者上一次叠加的结果值
 ```
+注：如果没有有initialValue时，reduce会从索引1的位置开始执行callback，跳过第一个索引
+
 注：空数组，无initialValue时报错
+
+
 
 reduceRight
 数组提供累加器
@@ -213,3 +222,27 @@ let letter = ['a', 'b', 'c'];
 
 参考
 > [掘金](https://juejin.im/post/5b0903b26fb9a07a9d70c7e0)
+
+### 类数组对象和arguments
+```js
+function foo(name, age, sex){
+  console.log(arguments)
+}
+foo('name', 'age', 'sex')
+```
+arguments的属性
+ - callee
+```js
+var data = []
+for(var i = 0; i < 4; i ++){
+  (data[i] = function(){
+    console.log(arguments.callee.i)
+  }).i = i
+}
+data[0]()
+data[1]()
+data[2]()
+```
+ 
+ - length
+

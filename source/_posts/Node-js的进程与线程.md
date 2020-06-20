@@ -98,10 +98,12 @@ process.on('uncatchedExpection', () =>{}) process.on
 三个标准流：process.stdout 标准输出、process.stdin 标准输入、process.stderr 标准错误输出
 
 ### child_process模块
-child_process.spawn()
-child_process.exec()
-child_process.execFile()
-child_process.fork() 衍生新的进程
+ - child_process.spawn()    异步衍生子进程，不阻塞Node事件循环
+ - child_process.spawnSync()同步衍生子进程，阻塞Node事件循环，直到进程退出或者终止
+ - child_process.exec()     
+ 衍生一个shell，并在shell中执行命令，完成时将stdout和stderr传给回掉函数
+ - child_process.execFile()
+ - child_process.fork() 衍生新的进程
 ```aidl
 //fork衍生子进程
 const http = require('http')

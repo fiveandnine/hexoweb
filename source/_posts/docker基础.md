@@ -95,4 +95,10 @@ gunzip -c <myimage>_<tag>.tar.gz | docker load
  
  服务实体冗余，使客户端避免轻易遇到out of service的警告。在集群中，同样的服务可以由多个服务实体提供。如果一个服务实体失败了，另一个服务实体会接管失败的服务实体。集群提供的从一个出错的服务实体恢复到另一个服务实体的功能增强了应用的可用性。
 
-https://blog.csdn.net/anumbrella/article/details/80369913
+(refer)[https://blog.csdn.net/anumbrella/article/details/80369913]
+
+## docker network
+```aidl
+docker network create -d bridge nginx_swarm
+```
+
