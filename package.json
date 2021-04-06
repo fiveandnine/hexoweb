@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "hexo claen && hexo g && hexo s",
-    "deploy": "hexo d"
+    "deploy": "hexo d",
+    "build": "hexo g"
   }
 }
